@@ -81,7 +81,7 @@ public class RabbitMQClient : IClient
 
         var consumer = new EventingBasicConsumer(channel);
 
-        consumer.Received += async (model, ea) =>
+        consumer.Received += async (_, ea) =>
         {
             var body = ea.Body.ToArray();
             var message = Encoding.UTF8.GetString(body);

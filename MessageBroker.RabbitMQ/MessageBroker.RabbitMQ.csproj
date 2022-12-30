@@ -7,7 +7,7 @@
 	<AssemblyName>MarcUnterseh.$(MSBuildProjectName)</AssemblyName>
 	<Title>MessageBroker.RabbitMQ</Title>
 	<Authors>Marc Unterseh</Authors>
-	<Description>Message braoker implementation using RabbitMQ</Description>
+	<Description>Message broker implementation using RabbitMQ</Description>
 	<PackageProjectUrl>https://github.com/MarcUnterseh/MessageBroker</PackageProjectUrl>
 	<RepositoryUrl>https://github.com/MarcUnterseh/MessageBroker</RepositoryUrl>
   </PropertyGroup>
