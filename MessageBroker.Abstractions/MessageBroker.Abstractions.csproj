@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+	<AssemblyName>MarcUnterseh.$(MSBuildProjectName)</AssemblyName>
+	<Title>MessageBroker.Abstractions</Title>
+	<Authors>Marc Unterseh</Authors>
+	<Description>Interfaces to manage event through any kind of message broker.</Description>
+	<PackageProjectUrl>https://github.com/MarcUnterseh/MessageBroker</PackageProjectUrl>
+	<RepositoryUrl>https://github.com/MarcUnterseh/MessageBroker</RepositoryUrl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+  	<WarningLevel>9999</WarningLevel>
+  	<NoWarn />
+  	<TreatWarningsAsErrors>True</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+  	<WarningLevel>9999</WarningLevel>
+  	<NoWarn />
+  	<TreatWarningsAsErrors>True</TreatWarningsAsErrors>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="11.1.0" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+	<AssemblyName>MarcUnterseh.$(MSBuildProjectName)</AssemblyName>
+	<Title>MessageBroker.RabbitMQ</Title>
+	<Authors>Marc Unterseh</Authors>
+	<Description>Message braoker implementation using RabbitMQ</Description>
+	<PackageProjectUrl>https://github.com/MarcUnterseh/MessageBroker</PackageProjectUrl>
+	<RepositoryUrl>https://github.com/MarcUnterseh/MessageBroker</RepositoryUrl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+  	<WarningLevel>9999</WarningLevel>
+  	<NoWarn />
+  	<TreatWarningsAsErrors>True</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+  	<WarningLevel>9999</WarningLevel>
+  	<NoWarn />
+  	<TreatWarningsAsErrors>True</TreatWarningsAsErrors>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="7.0.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
+    <PackageReference Include="RabbitMQ.Client" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MessageBroker.Abstractions\MessageBroker.Abstractions.csproj" />
+  </ItemGroup>
+
+</Project>
